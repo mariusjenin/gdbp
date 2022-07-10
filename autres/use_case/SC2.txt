@@ -1,0 +1,19 @@
+@startuml
+
+title Menu du site
+
+rectangle Menu {
+    (Gérer ma bibliothèque)
+    (Gérer mes listes)
+    (Gérer mes avis)
+    (Gérer mes prêts)
+    (Gérer mon profil)
+}
+
+:Utillisateur: 
+Utillisateur --> (Gérer ma bibliothèque)
+Utillisateur --> (Gérer mes listes)
+Utillisateur --> (Gérer mes avis)
+Utillisateur --> (Gérer mes prêts)
+Utillisateur --> (Gérer mon profil)
+@enduml

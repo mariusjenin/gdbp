@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+  <title>Gestion de Bibliothèques Personnelles</title>
+
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+  <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!-- Custom styles for our template -->
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/perso.css">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="home">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="active dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mes Livres <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="bibliotheque.html">Ma Bibliothèque</a></li>
+              <li><a href="listes.html">Mes Listes</a></li>
+              <li><a href="#">Mes Prêts</a></li>
+            </ul>
+          </li>
+          <li><a href="profil.html">Mon Profil</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
+
+  <header id="head" class="secondary"></header>
+
+  <!-- container -->
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li><a href="index.html">Accueil</a></li>
+      <li>Mes Livres</li>
+      <li><a href="listes.html">Ajouter un Livre</a></li>
+    </ol>
+
+    <div class="row">
+
+      <!-- Article main content -->
+      <article class="col-sm-12 maincontent">
+        <header class="page-header">
+          <h1 class="page-title">Ajouter un livre</h1>
+        </header>
+
+        <div class="col-md-8 col-xs-12" style="margin-top:30px">
+          <p style='color:#555;font-size:1.7rem'>
+            Si vous disposez d'un scanner de code vous pouvez l'utiliser pour scanner votre livre :<br>
+            Pour cela vous devez <strong>sélectionner le champ ci-dessous</strong> et <strong>scanner <span style="color:red">le code-barre</span></strong> au dos de votre ouvrage. cela rentrera automatiquement le code ISBN de celui-ci.</p>
+            <p style='color:#555;font-size:1.7rem'>
+              Si vous n'avez pas de scanner pas de panique vous pouvez le faire manuellement :<br>
+              Il vous faudra tout simplement <strong>recopier <span style="color:red">le code<span></strong> qui se trouve juste à coté du code-barre et <strong>valider votre saisie</strong> une fois fait.</p>
+                <form>
+                  <div class="form-group md-form active-pink active-pink-2 mb-3 mt-0">
+                    <input class="form-control input-lg" style="font-size:2rem" type="text" placeholder="Rechercher" aria-label="Rechercher">
+                  </div>
+                  <button type="submit" style="font-size:1.7rem" class="col-xs-12 btn-primary btn btn-lg">Valider le code ISBN</button>
+                </form>
+
+                <div class="col-xs-12 text-center card h-100" style="margin-top:20px;padding-left:0px;border:solid 1px #ccc;border-radius:5px">
+                  <div class="col-sm-4" style="padding-left:0px;">
+                    <img class="card-img-top" src="assets/images/livre.png">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body" style="">
+                      <h4 class="card-title">
+                        Titre du Livre
+                      </h4>
+                      <p class="card-text" style="padding:5px">Genre : genre</p>
+                      <p class="card-text" style="padding:5px">Auteur : auteur, auteur</p>
+                      <p class="card-text" style="padding:5px">Editeur : editeur</p>
+                      <p class="card-text" style="padding:5px">Format : format</p>
+                    </div>
+                    <div class="card-footer">
+                      <p style="font-size:2.5rem">★ ★ ★ ★ ☆</p>
+                    </div>
+                    <button class="btn-dark btn btn-ajout" type=submit><i class="fas fa-plus plus-btn-ajout"></i><span style="vertical-align:middle;">Ajouter ce Livre</span></button>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-none d-lg-block">
+              <img class="col-xs-12"src="assets/images/LivreAjout.png">
+            </div>
+
+            <!-- /.row -->
+
+          </article>
+          <!-- /Article -->
+        </div>
+      </div>	<!-- /container -->
+
+
+      <footer id="footer" class="top-space">
+
+        <div class="footer1">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-3 widget">
+                <h3 class="widget-title">Contact</h3>
+                <div class="widget-body">
+                  <a href="mailto:#">marius2401@laposte.net</a><br>
+                </div>
+              </div>
+
+            </div> <!-- /row of widgets -->
+          </div>
+        </div>
+
+        <div class="footer2">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-6 widget">
+                <div class="widget-body">
+                  <p class="simplenav">
+                    <a href="index.html">Accueil</a> |
+                    <a href="bibliotheque.html">Mes Livres</a> |
+                    <a href="profil.html">Mon Profil</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 widget">
+                <div class="widget-body">
+                  <p class="text-right">
+                    Designed by Marius JENIN
+                  </p>
+                </div>
+              </div>
+
+            </div> <!-- /row of widgets -->
+          </div>
+        </div>
+
+      </footer>
+
+
+
+
+
+      <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script src="assets/js/headroom.min.js"></script>
+      <script src="assets/js/jQuery.headroom.min.js"></script>
+      <script src="assets/js/template.js"></script>
+    </body>
+    </html>

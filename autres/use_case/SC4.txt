@@ -1,0 +1,32 @@
+@startuml
+
+title Gérer mes listes
+
+rectangle "Page des listes" {
+    (Naviguer ou rechercher dans mes listes)
+    (Créer une liste avec un thème ou un nom)
+(Ajouter des livres de la bibliothèque)
+(Retirer un livre d'une liste)
+    (Supprimer une liste)
+    (Modifier une liste avec un thème ou un nom)
+    (Consulter une liste)
+
+}
+
+:SGBD:
+:Utillisateur: 
+
+Utillisateur -->  (Naviguer ou rechercher dans mes listes)
+Utillisateur -->  (Créer une liste avec un thème ou un nom)
+Utillisateur -->  (Ajouter des livres de la bibliothèque)
+Utillisateur -->  (Retirer un livre d'une liste)
+Utillisateur -->  (Supprimer une liste)
+Utillisateur -->  (Modifier une liste avec un thème ou un nom)
+Utillisateur --> (Consulter une liste)
+(Créer une liste avec un thème ou un nom) <--SGBD
+(Supprimer une liste) <--SGBD
+(Modifier une liste avec un thème ou un nom) <--SGBD
+
+
+
+@enduml

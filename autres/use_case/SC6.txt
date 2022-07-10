@@ -1,0 +1,23 @@
+@startuml
+
+title Gérer mes prêts
+
+rectangle "Page des prêts" {
+    (Naviguer ou rechercher dans mes prêts)
+    (Terminer un prêt)
+    (Ajouter un livre qu'on me prête grâce à l'ISBN)
+
+}
+
+:SGBD:
+:Utillisateur: 
+
+Utillisateur -->  (Naviguer ou rechercher dans mes prêts)
+Utillisateur -->  (Terminer un prêt)
+Utillisateur -->  (Ajouter un livre qu'on me prête grâce à l'ISBN)
+(Terminer un prêt) <-- SGBD
+(Ajouter un livre qu'on me prête grâce à l'ISBN) <-- SGBD
+
+
+
+@enduml

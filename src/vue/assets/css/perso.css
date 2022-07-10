@@ -1,0 +1,63 @@
+
+.imagegrillelistes{
+  background-size: cover;
+  float:left;
+  padding-top:70%;
+  width: calc(50% - 2px);
+}
+
+.imagegrillelistes1{
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.imagegrillelistes2{
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.imagegrillelistes3{
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.imagegrillelistes4{
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+  .d-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
+  .d-xl-block {
+    display: block !important;
+  }
+}

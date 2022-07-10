@@ -1,0 +1,23 @@
+@startuml
+
+title Gérer mes avis
+
+rectangle "Page des avis" {
+    (Naviguer ou rechercher dans mes avis)
+    (Modifier un avis)
+    (Supprimer un avis)
+
+}
+
+:SGBD:
+:Utillisateur: 
+
+Utillisateur -->  (Naviguer ou rechercher dans mes avis)
+Utillisateur -->  (Modifier un avis)
+Utillisateur -->  (Supprimer un avis)
+(Modifier un avis) <-- SGBD
+(Supprimer un avis) <-- SGBD
+
+
+
+@enduml

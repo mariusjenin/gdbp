@@ -1,0 +1,21 @@
+@startuml
+
+title Gérer ma bibliothèque
+
+rectangle "Page de la bibliothèque" {
+    (Ajouter un livre avec ISBN)
+    (Naviguer/Rechercher dans mes livres)
+    (Consulter un livre)
+    (Rechercher dans les livres des utilisateurs)
+}
+
+:SGBD:
+:Utillisateur: 
+
+Utillisateur -->  (Ajouter un livre avec ISBN)
+Utillisateur -->  (Naviguer/Rechercher dans mes livres)
+Utillisateur -->  (Consulter un livre)
+Utillisateur --> (Rechercher dans les livres des utilisateurs)
+SGBD --> (Ajouter un livre avec ISBN)
+
+@enduml

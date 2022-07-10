@@ -1,0 +1,102 @@
+@startuml
+
+class Theme {
+  <b>numTheme PK
+  nomTheme
+}
+
+class aEcrit {
+  <b>numAuteur PK
+  <b>ISBN PK
+}
+
+class Compte {
+    <b>identifiant PK
+    mail
+    mdp
+    ISBNDeProfil
+}
+
+class Auteur {
+    <b>numAuteur PK
+    nomAuteur
+    prenomAuteur
+}
+
+class Avis{
+    <b>numAvis PK
+    contenu
+    note
+}
+
+class Liste{
+    <b>numListe PK
+    nomListe
+    description
+}
+
+class Pret{
+    <b>numPret PK
+    dateDep
+}
+class Livre {
+  <b>ISBN PK
+  titre
+  genre
+  datePublication
+  editeur
+  format
+  couverture
+  nbPages
+  description
+  score
+}
+
+class possede{
+    //<b>#identifiant PK//
+    //<b>#ISBN PK//
+}
+
+class contient{
+    //<b>#numListe PK//
+    //<b>#ISBN PK//
+}
+
+class ThemeLivre{
+    //<b>#numTheme PK//
+    //<b>#ISBN PK//
+}
+
+class ThemeListe{
+    //<b>#numTheme PK//
+    //<b>#numListe PK//
+}
+
+Liste "0..*" -- "1" Compte : identifiant
+Avis "0..*" -- "1" Livre : ISBNConseille
+Avis "0..*" -- "1"  Livre : ISBNAvis
+Avis "0..*" -- "1" Compte : identifiant
+Pret "0..*" -- "1" Livre : ISBN
+Pret "0..*" -- "1" Compte : identifiantDestinataire
+Pret "0..*" -- "1" Compte : identifiantPreteur
+Avis "*" -- "0..1" Avis : repondA 
+Liste "1" -- "0..*" Theme : themeListe
+
+Compte "0..*" -- "0..*" Livre
+(Livre,Compte) .. possede
+
+Livre "1..*" -- "0..*" Liste
+(Livre,Liste) .. contient
+
+Livre "1..*" -- "1..*" Auteur
+(Livre,Auteur) .. aEcrit
+
+Livre "1..*" -- "1..*" Theme
+(Livre,Theme) .. ThemeLivre
+
+Liste "1..*" -- "1..*" Theme
+(Liste,Theme) .. ThemeListe
+
+
+hide methods
+@enduml

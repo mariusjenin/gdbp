@@ -1,0 +1,18 @@
+@startuml
+title Gérer mon profil
+rectangle "Page de mon profil" {
+    (Modifier mon "livre de profil")
+    (Modifier mes informations)
+    (Supprimer mon compte)
+    (Consulter mes informations)
+}
+:SGBD:
+:Utillisateur:
+Utillisateur -->  (Modifier mon "livre de profil")
+Utillisateur -->  (Modifier mes informations)
+Utillisateur -->  (Supprimer mon compte)
+Utillisateur -->  (Consulter mes informations)
+(Modifier mon "livre de profil") <-- SGBD
+(Modifier mes informations)<-- SGBD
+(Supprimer mon compte)<-- SGBD
+@enduml

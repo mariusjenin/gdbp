@@ -1,0 +1,24 @@
+@startuml
+
+title Accéder au site
+
+rectangle "Page d'accès au site" {
+rectangle s'identifier{
+    (Inscription)
+    (Connexion)
+    }
+    (Consulter infos)
+}
+
+:Internaute:
+:Utillisateur: 
+:SGBD:
+
+Utillisateur -up-|> Internaute
+
+Internaute --> (Consulter infos)
+Internaute --> (Inscription)
+SGBD --> (Inscription)
+Utillisateur --> (Connexion)
+
+@enduml

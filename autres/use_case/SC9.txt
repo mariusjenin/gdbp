@@ -1,0 +1,29 @@
+
+
+@startuml
+
+title Consulter un livre
+
+rectangle "Page du livre" {
+	(Naviguer ou rechercher parmi les livres de la liste)
+	(Ajouter des livres de la bibliothèque)
+    (Ajouter des livres de la bibliothèque)
+    (Retirer un livre d'une liste)
+
+}
+
+:Utillisateur: 
+
+Utillisateur -->  (Naviguer ou rechercher parmi les livres de la liste)
+Utillisateur -->	(Ajouter des livres de la bibliothèque)
+  Utillisateur -->  (Retirer un livre d'une liste)
+
+:SGBD:
+
+
+(Ajouter des livres de la bibliothèque) <--SGBD
+(Retirer un livre d'une liste) <--SGBD
+
+@enduml
+
+

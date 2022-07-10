@@ -1,0 +1,56 @@
+
+
+@startuml
+
+title Consulter un livre
+
+rectangle "Page du livre" {
+
+    (Consulter les informations du livre)
+
+    (Ajouter le livre à une liste)
+
+    (Prêter le livre)
+
+    (Ajouter un avis ,avis simple ou réponse à un autre avis)
+
+    (Définir comme mon "livre de profil")
+
+    (Ajouter à la bibliothèque)
+
+    (Supprimer de la bibliothèque)
+
+}
+
+:Utillisateur: 
+
+Utillisateur -->  (Consulter les informations du livre)
+
+Utillisateur -->  (Ajouter le livre à une liste)
+
+Utillisateur -->  (Prêter le livre)
+
+Utillisateur -->  (Ajouter un avis ,avis simple ou réponse à un autre avis)
+
+Utillisateur -->  (Définir comme mon "livre de profil")
+
+Utillisateur -->  (Ajouter à la bibliothèque)
+
+Utillisateur -->  (Supprimer de la bibliothèque)
+
+:SGBD:
+
+(Ajouter le livre à une liste) <-- SGBD
+
+(Prêter le livre)<-- SGBD
+
+(Ajouter un avis ,avis simple ou réponse à un autre avis)<-- SGBD
+
+(Définir comme mon "livre de profil")<-- SGBD
+
+(Ajouter à la bibliothèque)<-- SGBD
+
+(Supprimer de la bibliothèque)<-- SGBD
+
+@enduml
+
